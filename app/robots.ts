@@ -1,0 +1,1 @@
+export default function robots() { const s = process.env.NEXT_PUBLIC_SITE_URL || ""; return { rules: { userAgent: "*", allow: "/", disallow: ["/admin", "/search", "/api"] }, sitemap: `${s}/sitemap.xml` }; }
